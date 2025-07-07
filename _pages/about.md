@@ -22,7 +22,7 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
 
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
-      [June 2025] 🧑‍🏫 Providing <strong style="color:#0d6efd;">hands-on experimentation training</strong> at the <em style="color:#6c757d;">NSF CyberTraining Summer 2024</em> at Stevens Institute of Technology.
+      [June 2025] 🧑‍🏫 Providing <strong style="color:#0d6efd;">hands-on experimentation training</strong> at the <em style="color:#6c757d;">NSF CyberTraining Summer 2025</em> at Stevens Institute of Technology.
     </li>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [May 2025] 🎓 <strong style="color:#0d6efd;">Graduated</strong> with a Master of Science in <em style="color:#6c757d;">Applied Artificial Intelligence</em>.
@@ -34,11 +34,9 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
       [April 2025] 🎓 Successfully defended my <strong style="color:#0d6efd;">Master’s Thesis</strong>.
     </li>
     <!-- <span style="background:#fff; padding:0 10px;">2024</span> -->
-    <span style="display: block; text-align: center; margin: 1rem 0; font-size: 1.1rem; font-weight: bold; color: #555;">
-  2024
-</span>
+    <span style="display: block; text-align: center; margin: 1rem 0; font-size: 1.1rem; font-weight: bold; color: #555;">2024</span>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
-      [August 2024] 📡 Presented a poster on <strong style="color:#0d6efd;"><a href="/files/ORAN_Fingerprintinf_Poster.pdf" target="_blank">Federated Learning for RF Fingerprinting in Open Radio Access Networks (O-RAN)</strong></a> at the 
+      [August 2024] 📡 Presented a poster on <strong style="color:#0d6efd;"><a href="/files/ORAN_Fingerprintinf_Poster.pdf" target="_blank">Federated Learning for RF Fingerprinting in Open Radio Access Networks (O-RAN)</a></strong> at the 
   <a href="https://sites.google.com/view/et-nsc" target="_blank" style="color:#d63384;">1st Symposium on Emerging Topics in Networks, Systems, and Cybersecurity</a>.
     </li>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
