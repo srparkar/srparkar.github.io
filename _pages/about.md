@@ -38,7 +38,7 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
   2024
 </span>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
-      [August 2024] 📡 Presented a poster on <strong style="color:#0d6efd;">Federated Learning for RF Fingerprinting</strong> at the 
+      [August 2024] 📡 Presented a poster on <strong style="color:#0d6efd;"><a href="/files/ORAN_Fingerprintinf_Poster.pdf" target="_blank">Federated Learning for RF Fingerprinting in Open Radio Access Networks (O-RAN)</strong></a> at the 
   <a href="https://sites.google.com/view/et-nsc" target="_blank" style="color:#d63384;">1st Symposium on Emerging Topics in Networks, Systems, and Cybersecurity</a>.
     </li>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
