@@ -33,6 +33,10 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [April 2025] 🎓 Successfully defended my <strong style="color:#0d6efd;">Master’s Thesis</strong>.
     </li>
+    <!-- <span style="background:#fff; padding:0 10px;">2024</span> -->
+    <span style="display: block; text-align: center; margin: 1rem 0; font-size: 1.1rem; font-weight: bold; color: #555;">
+  2024
+</span>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [June 2024] 🏆 Awarded <strong style="color:#d6336c;">1st Place</strong> at the <em style="color:#555;">ECE Research Scholarship, Spring 2024</em>.
     </li>
