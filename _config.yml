@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"
+site_theme               : "light"
 title                    : "Saurabh Parkar"
 title_separator          : "-"
 name                     : &name "Saurabh Parkar"
@@ -29,7 +29,8 @@ author:
   location         : "NJ, USA"
   employer         : "Stevens Institute of Technology"
   uri              : # URL
-  email            : "sparkar@stevens.edu" 
+  email            : "sparkar@stevens.edu"
+  
 
   # Academic websites
   academia         : # URL
@@ -120,7 +121,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -146,8 +147,9 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
-
+    # - label: "sparkar@stevens.edu" 
+    #   url: "mailto:sparkar@stevens.edu"
+    #   icon: "fas fa-envelope"
 # Analytics
 analytics:
   provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"

@@ -15,10 +15,10 @@ My core research focuses on integrated sensing and communication (ISAC) using mm
 
 I previously completed my undergraduate studies in Computer Engineering at Mumbai University, where I built a strong foundation in machine learning, data structures, cloud computing, computer networks, applied data analytics, cryptography, and mobile computing. These courses laid the groundwork for my continued research in AI-powered communication systems and intelligent edge inference.
 
-I am currently looking for <strong style="color:#ff0000;">PhD and **Research Positions**.</strong>
+<!-- I am currently looking for <strong style="color:#ff0000;">PhD and Research Positions.</strong> -->
 
 ## 📰 News
-<div style="max-height: 300px; overflow-y: auto; padding: 1rem; border: 1px solid #ccc; background: #fafafa; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); font-size: 0.95rem; line-height: 1.6;">
+<div style="max-height: 300px; overflow-y: auto; padding: 1rem; border: 1px solid #ccc; background: #fafafa; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); font-size: 0.95rem; line-height: 1.6; color: black;">
 
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
@@ -36,7 +36,7 @@ I am currently looking for <strong style="color:#ff0000;">PhD and **Research Pos
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [June 2024] 🏆 Awarded <strong style="color:#d6336c;">1st Place</strong> at the <em style="color:#555;">ECE Research Scholarship, Spring 2024</em>.
     </li>
-</ul>
+  </ul>
 
 </div>
 
