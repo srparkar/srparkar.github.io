@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-![AI-powered wireless edge: Researcher working on intelligent communication systems at the intersection of AI and signal processing.](/images/aboutme.png){: .align-right width="400px"}
+<!-- ![AI-powered wireless edge: Researcher working on intelligent communication systems at the intersection of AI and signal processing.](/images/aboutme.png){: .align-right width="400px"} -->
 
 I am a recent graduate of the Master of Science in Applied Artificial Intelligence program at Stevens Institute of Technology, where I specialized in AI-augmented wireless systems, intelligent sensing architectures, and real-time signal processing. My academic work bridges the intersection of communication, sensing, and machine learning, with a focus on advancing contactless health monitoring and edge intelligence in next-generation networks.
 
