@@ -38,6 +38,10 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
   2024
 </span>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
+      [August 2024] 📡 Presented a poster on <strong style="color:#0d6efd;">Federated Learning for RF Fingerprinting</strong> at the 
+  <a href="https://sites.google.com/view/et-nsc" target="_blank" style="color:#d63384;">1st Symposium on Emerging Topics in Networks, Systems, and Cybersecurity</a>.
+    </li>
+    <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [June 2024] 🏆 Awarded <strong style="color:#d6336c;">1st Place</strong> at the <em style="color:#555;">ECE Research Scholarship, Spring 2024</em>.
     </li>
   </ul>
