@@ -1,6 +1,6 @@
 ---
 title: "V2X Network Slicing Prediction with Deep Learning."
-excerpt: "QoS-aware V2X session classification for adaptive slicing in O-RAN <img src='/images/v2x-oran.png''width: 450px;'>"
+excerpt: "QoS-aware V2X session classification for adaptive slicing in O-RAN <img src='/images/v2x-oran.png'>"
 collection: portfolio
 ---
 

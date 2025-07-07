@@ -1,6 +1,6 @@
 ---
 title: "5G-FMCW ISAC for Contactless Respiration Monitoring"
-excerpt: "Dual-modality ISAC system using 28 GHz 5G NR and FMCW radar for respiration detection<img src='/images/isac-overview.png' width: 450px>"
+excerpt: "Dual-modality ISAC system using 28 GHz 5G NR and FMCW radar for respiration detection<img src='/images/isac-overview.png'>"
 collection: portfolio
 ---
 

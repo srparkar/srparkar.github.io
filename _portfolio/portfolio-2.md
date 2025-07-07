@@ -1,6 +1,6 @@
 ---
 title: "Federated RF Fingerprinting for O-RAN"
-excerpt: "Federated learning-based RF fingerprinting in O-RAN with privacy-preserving training <img src='/images/federated-oran.png' width:450px>"
+excerpt: "Federated learning-based RF fingerprinting in O-RAN with privacy-preserving training <img src='/images/federated-oran.png'>"
 collection: portfolio
 ---
 
