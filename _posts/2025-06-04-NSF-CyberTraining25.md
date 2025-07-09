@@ -8,7 +8,7 @@ tags:
   # - category2
 ---
 
-At <em>**Stevens Institute of Technology**</em>, we held a month-long, NSF CyberTraining workshop designed to train Master’s students in **next-generation wireless technologies**. The program emphasized hands-on learning across key areas such as **Software-Defined Radios (SDRs)**, **mmWave sensing**, **Integrated Sensing and Communication (ISAC)**, and **Open Radio Access Networks (O-RAN)**. Through intensive weekly sessions, participants engaged directly with real-world experimental platforms to build both foundational knowledge and technical fluency in advanced wireless systems.
+At <em>**Stevens Institute of Technology**</em>, we held a month-long, NSF CyberTraining workshop designed to train Master’s students in **next-generation wireless technologies**. The program emphasized hands-on learning across key areas such as **Software-Defined Radios (SDRs)**, **mmWave sensing**, **Integrated Sensing and Communication (ISAC)**, and **Open Radio Access Networks (O-RAN)**. Through intensive weekly sessions covering the theoretical concepts and practical applications, participants engaged directly with real-world experimental platforms to build both foundational knowledge and technical fluency in advanced wireless systems.
 
 
 Spanning four weeks, the program was structured to progressively build hands-on experience across:
