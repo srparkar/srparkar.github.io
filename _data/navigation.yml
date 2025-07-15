@@ -23,8 +23,12 @@ main:
   - title: "Posts"
     url: /year-archive/
     
+  - title: "People"
+    url: /people/
+    
   - title: "CV"
     url: /files/Saurabh_Parkar_CV.pdf
+  
     
   # - title: "CV"
   #   url: /cv-json/

@@ -45,4 +45,3 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
   </ul>
 
 </div>
-
