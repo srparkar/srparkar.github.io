@@ -27,8 +27,7 @@ main:
     url: /people/
     
   - title: "CV"
-    url: /files/SaurabhParkar_CV.pdf
-  
+    url: /cv/
     
   # - title: "CV"
   #   url: /cv-json/
