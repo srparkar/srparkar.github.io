@@ -12,12 +12,12 @@
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %} -->
-  {% if page.collection == 'projects' %}
+  {% if page.collection == 'projects' or page.collection == 'research' %}
   {% if page.next %}
-    <a href="{{ page.next.url | relative_url }}" class="btn">← Previous Project</a>
+    <a href="{{ page.next.url | relative_url }}" class="btn">← Previous</a>
   {% endif %}
   {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}" class="btn">Next Project →</a>
+    <a href="{{ page.previous.url | relative_url }}" class="btn">Next →</a>
   {% endif %}
   {% else %}
   {% if page.previous %}

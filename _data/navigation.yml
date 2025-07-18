@@ -16,9 +16,8 @@ main:
 
   # - title: "Teaching"
   #   url: /teaching/    
-    
-  - title: "Posts"
-    url: /year-archive/
+  - title: "Research"
+    url: /research/
 
   - title: "Projects"
     url: /projects/    
@@ -26,6 +25,9 @@ main:
   - title: "People"
     url: /people/
     
+  - title: "Posts"
+    url: /posts/
+
   - title: "CV"
     url: /cv/
     
