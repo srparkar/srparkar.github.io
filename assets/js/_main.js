@@ -44,6 +44,7 @@ const browserPref = "light";
 //     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
 //   }
 // };
+localStorage.removeItem("theme");
 let setTheme = () => {
   $("html").removeAttr("data-theme");
   $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
@@ -54,8 +55,8 @@ let setTheme = () => {
 var toggleTheme = () => {
   const current_theme = $("html").attr("data-theme");
   const new_theme = current_theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", new_theme);
-  setTheme(new_theme);
+  localStorage.setItem("theme", "light");
+  setTheme("light");
 };
 
 /* ==========================================================================
