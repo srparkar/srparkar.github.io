@@ -15,6 +15,20 @@ My core research focuses on integrated sensing and communication (ISAC) using mm
 
 I previously completed my undergraduate studies in Computer Engineering at Mumbai University, where I built a strong foundation in machine learning, data structures, cloud computing, computer networks, applied data analytics, cryptography, and mobile computing. These courses laid the groundwork for my continued research in AI-powered communication systems and intelligent edge inference.
 
+<div style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 2px solid #888; border-radius: 6px; background: #fff; color: #000000">
+  <strong>Research Interests:</strong>
+  <ul>
+    <li><strong>Wireless Communication:</strong> 5G NR, Sub-6 GHz, mmWave, Next-G networks, O-RAN architectures, and AI-RAN systems.</li>
+    <li><strong>Integrated Sensing and Communication (ISAC):</strong> Joint radar-communication systems for healthcare, vehicular networks, and smart environments.</li>
+    <li><strong>Machine Learning for Wireless Systems:</strong> Deep learning for signal classification, channel learning, and federated learning in edge devices.</li>
+    <li><strong>Edge Intelligence & SDR Experimentation:</strong> Real-time inference on SDR platforms; intelligent wireless testbeds.</li>
+  </ul>
+  <strong style="color: #ff0000;">
+I am looking for research engineer positions and PhD positions in ECE related to my research interests in AI, ISAC and O-RAN communications systems.</strong>
+</div>
+
+
+
 <!-- I am currently looking for <strong style="color:#ff0000;">PhD and Research Positions.</strong> -->
 
 ## 📰 News
