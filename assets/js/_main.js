@@ -52,12 +52,16 @@ let setTheme = () => {
 
 
 // Toggle the theme manually
+// var toggleTheme = () => {
+//   const current_theme = $("html").attr("data-theme");
+//   const new_theme = current_theme === "dark" ? "light" : "dark";
+//   localStorage.setItem("theme", "light");
+//   setTheme("light");
+// };
 var toggleTheme = () => {
-  const current_theme = $("html").attr("data-theme");
-  const new_theme = current_theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", "light");
-  setTheme("light");
+  // Do nothing, theme toggling disabled
 };
+
 
 /* ==========================================================================
    Plotly integration script so that Markdown codeblocks will be rendered
