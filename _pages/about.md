@@ -24,7 +24,7 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
     <li><strong>Edge Intelligence & SDR Experimentation:</strong> Real-time inference on SDR platforms; intelligent wireless testbeds.</li>
   </ul>
   <strong style="color: #ff0000;">
-I am looking for research engineer positions and PhD positions in ECE related to my research interests in AI, ISAC and O-RAN communications systems.</strong>
+I am looking for research positions related to my research interests in AI, ISAC and O-RAN communications systems.</strong>
 </div>
 
 
