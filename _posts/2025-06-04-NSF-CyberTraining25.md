@@ -30,17 +30,17 @@ Throughout the program, students will explore concepts of **28 GHz mmWave sens
   margin-bottom: 1.5rem;
   color: var(--text-color,rgb(21, 99, 176));
 ">
-  <img src="../images/20250604_155012.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
+  <img src="/images/20250604_155012.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
 
   <p style="text-align: center; margin-top: 0.75rem; font-size: 0.95rem; color: #000;">
     Foundational wireless system concepts presented by <a href="https://www.stevens.edu/profile/syu19" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">Prof. Shucheng Yu</a>.
   </p>
-  <img src="../images/20250611_154508.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
+  <img src="/images/20250611_154508.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
 
   <p style="text-align: center; margin-top: 0.75rem; font-size: 0.95rem; color: #000;">
     ISAC foundational concepts taught by <a href="https://xueshannon.github.io" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">Prof. Xiaochan Xue</a>.
   </p>
-  <img src="../images/DSCN3483.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
+  <img src="/images/DSCN3483.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
 
   <p style="text-align: center; margin-top: 0.75rem; font-size: 0.95rem; color: #000;">
     NSF CyberTraining 2025 – Team Photo
