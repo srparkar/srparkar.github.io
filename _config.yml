@@ -232,6 +232,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -261,7 +264,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _publications
   - scope:
@@ -270,7 +273,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:
@@ -288,7 +291,16 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
+  #_news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
 
 
 # Sass/SCSS

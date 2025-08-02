@@ -32,7 +32,37 @@ I am looking for research positions related to my research interests in AI, ISAC
 <!-- I am currently looking for <strong style="color:#ff0000;">PhD and Research Positions.</strong> -->
 
 ## 📰 News
+
 <div style="max-height: 300px; overflow-y: auto; padding: 1rem; border: 1px solid #ccc; background: #fafafa; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); font-size: 0.95rem; line-height: 1.6; color: black;">
+  <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+    {% assign news_items = site.news | sort: 'date' | reverse %}
+    {% assign current_year = "" %}
+    {% assign this_year = 'now' | date: "%Y" %}
+    {% for item in news_items %}
+      {% assign year = item.date | date: "%Y" %}
+      {% assign stripped = item.content | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', '' %}
+      {% if year != current_year %}
+        {% unless year == this_year %}
+          <span style="display: block; text-align: center; margin: 1rem 0; font-size: 1.1rem; font-weight: bold; color: #555;"> {{ year }} </span>
+        {% endunless %}
+        {% assign current_year = year %}
+      {% endif %}
+      <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #000;">
+        <div style="margin-bottom: 0.3rem; color: #000;">
+          {% if item.link != "" %}
+            [{{ item.date | date: "%B %Y" }}] <a href="{{ item.link }}" style="text-decoration: none; color: inherit;">
+              {{ stripped }}
+            </a>
+          {% else %}
+            [{{ item.date | date: "%B %Y" }}] {{ stripped }}
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- <div style="max-height: 300px; overflow-y: auto; padding: 1rem; border: 1px solid #ccc; background: #fafafa; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); font-size: 0.95rem; line-height: 1.6; color: black;">
 
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
@@ -47,7 +77,6 @@ I am looking for research positions related to my research interests in AI, ISAC
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [April 2025] 🎓 Successfully defended my <strong style="color:#0d6efd;">Master’s Thesis</strong>.
     </li>
-    <!-- <span style="background:#fff; padding:0 10px;">2024</span> -->
     <span style="display: block; text-align: center; margin: 1rem 0; font-size: 1.1rem; font-weight: bold; color: #555;">2024</span>
     <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
       [August 2024] 📡 Presented a poster on <strong style="color:#0d6efd;"><a href="/files/ORAN_Fingerprintinf_Poster.pdf" target="_blank">Federated Learning for RF Fingerprinting in Open Radio Access Networks (O-RAN)</a></strong> at the 
@@ -57,5 +86,5 @@ I am looking for research positions related to my research interests in AI, ISAC
       [June 2024] 🏆 Awarded <strong style="color:#d6336c;">1st Place</strong> at the <em style="color:#555;">ECE Research Scholarship, Spring 2024</em>.
     </li>
   </ul>
-
-</div>
+</div> -->
+<!-- <span style="background:#fff; padding:0 10px;">2024</span> -->
