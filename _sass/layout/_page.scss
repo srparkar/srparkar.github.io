@@ -16,6 +16,37 @@
   }
 }
 
+#main.about-layout {
+  @include container;
+  @include clearfix;
+  margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
+  max-width: none;
+  
+  @include breakpoint($x-large) {
+    // max-width: $x-large;
+    // margin-left: 312.5px;
+    margin-left: calc((100vw - #{$x-large}) / 2);
+    max-width: none !important;
+  }
+}
+@media (max-width: 420px) {
+  /* 1) Stack sidebar + main + news vertically */
+  #main.about-layout {
+    flex-direction: column !important;
+  }
+
+  /* 2) Make your news bar full-width and drop it last */
+  .news-container {
+    flex: 0 0 auto       !important;
+    width: 100%          !important;
+    order: 3             !important;
+    margin: 2rem 0 0 0   !important;
+  }
+}
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
@@ -33,12 +64,29 @@
     }
   }
 }
+// .page-about {
+//   @include breakpoint($large) {
+//     @include span(10 of 12 last);
+//     @include prefix(0.5 of 12);
+//     @include suffix(2 of 12);
+//   }
+
+//   .page__inner-wrap {
+//     @include full();
+
+//     .page__content,
+//     .page__meta,
+//     .page__share {
+//       @include full();
+//     }
+//   }
+// }
 
 .page__title {
   margin-top: 0;
   line-height: 1;
 
-  & + .page__meta {
+  &+.page__meta {
     margin-top: -0.5em;
   }
 }
@@ -55,7 +103,9 @@
     border-bottom: 1px solid var(--global-border-color);
   }
 
-  p, li, dl {
+  p,
+  li,
+  dl {
     font-size: 1em;
   }
 
@@ -64,8 +114,8 @@
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
+    @if $paragraph-indent ==true {
+      &+p {
         text-indent: $indent-var;
         margin-top: -($indent-var);
       }
@@ -101,7 +151,7 @@
   }
 
   /* blockquote citations */
-  blockquote + .small {
+  blockquote+.small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
@@ -300,6 +350,7 @@
   transition: $global-transition;
 
   &.disabled {
+
     input,
     button,
     textarea,
