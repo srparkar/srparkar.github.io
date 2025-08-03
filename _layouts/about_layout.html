@@ -20,7 +20,8 @@ layout: default
   </div>
   <div class="main-container" style="display: flex; 
     flex-direction: row; 
-    flex: 1 1 800; gap: 2rem; 
+    flex: 1 1 800; 
+    gap: 1rem; 
     align-items: flex-start; 
     min-width: 0;">
     <article class="page-about" itemscope itemtype="http://schema.org/CreativeWork"
@@ -123,11 +124,11 @@ layout: default
       {% endif %}
     </article>
   </div>
-  <div class="news-container" style="flex: 0 0 450px; align-self: stretch; position: sticky;
-         top: 5.5rem;">
-    <b>📰 News</b>
+  <div class="news-container" style="flex: 0 0 450px; align-self: stretch; position:sticky; top: 5.5rem;">
     <aside id="about-news" style="
-         flex-basis: auto;
+         position: sticky;
+         top: 5.5rem;
+         flex-basis: 300px;
          background: #fafafa;
          border-radius: 8px;
          padding: 1rem;
@@ -135,11 +136,29 @@ layout: default
          font-size: 0.95rem;
          line-height: 1.6;
          color: black;
-         max-height: 65vh;
-         overflow-y: auto;
+         max-height: 55vh;
+         overflow-y: hidden;
          flex-shrink: 1;
        ">
-      <ul id="news-list" style="list-style-type: none; padding-left: 0; margin: 0;">
+         <div style="
+        position: sticky;
+        top: 0;
+        /* background: #fafafa; */
+        padding-bottom: 1rem;
+        font-weight: bold;
+        z-index: 2;
+      ">
+        📰 News
+      </div>
+      <!-- <ul id="news-list" style="list-style-type: none; padding-left: 0; margin: 0;"> -->
+      <ul id="news-list" style="
+      max-height: calc(65vh - 3rem); /* subtract header height */
+      overflow-y: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0 1rem 1rem;
+      line-height: 1.6;
+    ">
         {% assign news_items = site.news | sort: 'date' | reverse %}
         {% assign current_year = "" %}
         {% assign this_year = 'now' | date: "%Y" %}
