@@ -17,7 +17,8 @@ My core research focuses on integrated sensing and communication (ISAC) using mm
 <p style="text-align: justify; text-justify: inter-word;">
 I previously completed my undergraduate studies in Computer Engineering at Mumbai University, where I built a strong foundation in machine learning, data structures, cloud computing, computer networks, applied data analytics, cryptography, and mobile computing. These courses laid the groundwork for my continued research in AI-powered communication systems and intelligent edge inference.
 </p>
-<div style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 2px solid #888; border-radius: 6px; background: #fff; color: #555555">
+
+<div style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 2px solid #888; border-radius: 6px; background: #fff; ">
   <strong>Research Interests:</strong>
   <ul>
     <li><strong>Wireless Communication:</strong> 5G NR, Sub-6 GHz, mmWave, Next-G networks, O-RAN architectures, and AI-RAN systems.</li>
