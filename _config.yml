@@ -67,7 +67,7 @@ author:
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : # Username
+  steam            : # nexuseli18
   telegram         : # URL
   tumblr           : # Username
   twitter          : # Username for X / Twitter
@@ -159,6 +159,7 @@ analytics:
 # Reading Files
 include:
   - .htaccess
+  - .well-known
   - _pages
   - files
 exclude:
@@ -218,10 +219,10 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   projects:
     output: true
@@ -230,10 +231,10 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
   news:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
