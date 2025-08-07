@@ -1,8 +1,9 @@
 ---
 title: "Image Generation using Generative Adversarial Networks (GAN)"
-excerpt: "PyTorch-based GAN trained on CIFAR-10 for image synthesis <img src='/images/gan.png'>"
+excerpt: "PyTorch-based GAN trained on CIFAR-10 for image synthesis"
 collection: projects
 layout: single
+image: "/images/gan.png"
 author_profile: true
 ---
 

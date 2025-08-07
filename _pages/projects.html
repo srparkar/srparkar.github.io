@@ -7,9 +7,29 @@ author_profile: true
 
 {% include base_path %}
 
-This page contains a list of my academic projects. For research projects please see <a href="{{ site.baseurl }}/research/">Research</a>.
+This page contains a list of my academic projects. For research projects please see <a
+  href="{{ site.baseurl }}/research/">Research</a>.
 
 {% for post in site.projects reversed %}
-  {% include archive-single.html %}
+<!-- {% include archive-single.html %} -->
+<div style="
+     display: flex;
+     align-items: center;
+     background: #fff;
+     border: 1px solid #e2e8f0;
+     border-radius: 8px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+     font-size: 0.8rem;
+   ">
+  <img src="{{ post.image }}" alt="{{ post.title }} image"
+    style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin-right: 1rem;">
+  <div style="flex:1">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title | escape }}</a>
+    </div>
+    {{post.excerpt | markdownify | remove: '<p>' | remove: '</p>' | escape }}
+  </div>
+</div>
 {% endfor %}
-

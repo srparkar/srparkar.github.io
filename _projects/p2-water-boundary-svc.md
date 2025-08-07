@@ -1,6 +1,7 @@
 ---
 title: "Semi-Supervised Water Boundary Detection using Drone Imagery"
-excerpt: "SVM-C and K-means based classifier for water-land segmentation <img src='/images/boundary.png'>"
+excerpt: "SVM-C and K-means based classifier for water-land segmentation."
+image: "/images/boundary.png"
 collection: projects
 layout: single
 author_profile: true
