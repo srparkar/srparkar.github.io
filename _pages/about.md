@@ -26,6 +26,4 @@ I previously completed my undergraduate studies in Computer Engineering at Mumba
     <li><strong>Machine Learning for Wireless Systems:</strong> Deep learning for signal classification, channel learning, and federated learning in edge devices.</li>
     <li><strong>Edge Intelligence & SDR Experimentation:</strong> Real-time inference on SDR platforms; intelligent wireless testbeds.</li>
   </ul>
-  <strong style="color: #f73c3cff;">
-I am looking for research positions related to my research interests in AI, ISAC and O-RAN communications systems.</strong>
 </div>
