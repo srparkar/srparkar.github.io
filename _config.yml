@@ -47,7 +47,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "nexuseli18"
+  github           : "saurabhpark"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -95,7 +95,7 @@ future                   : true
 read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -106,7 +106,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -234,7 +234,7 @@ collections:
     output: false
     permalink: /:collection/:path/
   news:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 
@@ -248,9 +248,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: false
-      related: true
+      related: false
   # _pages
   - scope:
       path: ""
@@ -284,7 +284,7 @@ defaults:
       layout: single
       author_profile: true
       share: false
-      comment: true
+      comment: false
   # _talks
   - scope:
       path: ""
@@ -314,7 +314,9 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: US/Eastern # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# timezone: US/Hawaii 
+
 
 
 # Plugins
