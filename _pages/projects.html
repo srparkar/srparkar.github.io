@@ -14,7 +14,7 @@ This page contains a list of my academic projects. For research projects please 
 <!-- {% include archive-single.html %} -->
 <div style="
      display: flex;
-     align-items: center;
+     align-items: flex-start;
      background: #fff;
      border: 1px solid #e2e8f0;
      border-radius: 8px;
@@ -26,10 +26,14 @@ This page contains a list of my academic projects. For research projects please 
   <img src="{{ post.image }}" alt="{{ post.title }} image"
     style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin-right: 1rem;">
   <div style="flex:1">
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title | escape }}</a>
+    <div style="display:flex; justify-content:space-between; align-items: normal;">
+      <strong style="font-size: 1.5em;">{{ post.title | escape }}</strong>
     </div>
-    {{post.excerpt | markdownify | remove: '<p>' | remove: '</p>' | escape }}
+    <p class="archive__item-excerpt" itemprop="description" style="font-size: 1.1em;">
+      {% assign excerpt_text = post.excerpt | markdownify | strip_html | newline_to_br %}
+      {{ excerpt_text | truncate: 500, "" }}
+      <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more...</a></strong>
+    </p>
   </div>
 </div>
 {% endfor %}
