@@ -33,6 +33,24 @@
     max-width: none !important;
   }
 }
+
+#main.single_modif {
+  @include container;
+  @include clearfix;
+  margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
+  max-width: none;
+  
+  @include breakpoint($x-large) {
+    max-width: calc($x-large+20);
+    // margin-left: 312.5px;
+    margin-left: calc(((100vw - #{$x-large}) / 2));
+    // max-width: none !important;
+  }
+}
 @media (max-width: 420px) {
   /* 1) Stack sidebar + main + news vertically */
   #main.about-layout {
