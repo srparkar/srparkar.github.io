@@ -36,7 +36,7 @@ redirect_from:
 <!-- Cards Style -->
 <ul style="list-style-type: none; padding-left: 0; margin: 0;">
       <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #000;">
-      <div style="margin-bottom: 0.3rem; color: #000;"> <a href="https://www.stevens.edu/profile/syu19" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">
+      <div style="margin-bottom: 0.3rem; color: #000;"> <a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">
       Prof. Shucheng Yu
     </a> – <em>Associate Chair of Graduate CSE Department</em>, <strong>Yeshiva University
 </strong> 
