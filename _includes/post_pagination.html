@@ -12,7 +12,7 @@
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %} -->
-  {% if page.collection == 'projects' or page.collection == 'research' %}
+  {% if page.collection == 'projects' or page.collection == 'research' or page.collection == 'posts' %}
   {% if page.next %}
     <a href="{{ page.next.url | relative_url }}" class="btn">← Previous</a>
   {% endif %}

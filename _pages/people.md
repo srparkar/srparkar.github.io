@@ -1,13 +1,13 @@
 ---
 permalink: /people/
-title: "🧑‍🔬Collaborators"
+title: "Collaborators"
 layout: single_modif
 author_profile: true
 redirect_from: 
   - /people.html
 ---
 
-## Academic
+## 🏫 Academic
 <!-- Formatted List Style -->
 <!-- <ul style="list-style: disc; padding-left: 1.5rem; margin: 0;">
   <li style="margin-bottom: 0.75rem; padding-left: 0.5rem; border-left: 2px solid rgba(0,0,0,0.1);">
@@ -38,7 +38,7 @@ redirect_from:
       <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #000;">
       <div style="margin-bottom: 0.3rem; color: #000;"> <a href="https://www.stevens.edu/profile/syu19" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">
       Prof. Shucheng Yu
-    </a> – <em>Associate Chair of Graduate CSE Department</em> at <strong>Yeshiva University
+    </a> – <em>Associate Chair of Graduate CSE Department</em>, <strong>Yeshiva University
 </strong> 
 <!-- &nbsp;|&nbsp; -->
  <!-- <span style="display:inline-block; padding:0.2em 0.6em; font-size:0.7rem; font-weight:bold; 
@@ -51,7 +51,7 @@ redirect_from:
       <li style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #000;">
         <div style="margin-bottom: 0.3rem; color: #000;"> <a href="https://xueshannon.github.io" target="_blank" rel="noopener noreferrer" style="color: #d97c5f">
       Prof. Xiaochan Xue
-    </a> – <em>Assisstant Professor</em> at <strong>University of Hawaii at Mānoa</strong> 
+    </a> – <em>Assisstant Professor</em>, <strong>University of Hawaii at Mānoa</strong> 
     <!-- &nbsp;|&nbsp; -->
 <!-- <span style="display:inline-block; padding:0.2em 0.6em; font-size:0.7rem; font-weight:bold; 
         text-transform:uppercase; border-radius:0.25rem; background-color:#f5f5f5; 

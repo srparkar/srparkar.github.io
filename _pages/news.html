@@ -1,0 +1,54 @@
+---
+layout: archive
+title: "📰 Updates"
+permalink: /updates/
+author_profile: true
+---
+
+
+{% include base_path %}
+
+
+<div class="news-container" style="flex: 0 0 450px; align-self: stretch; ;">
+  <ul id="news-list" style="
+      max-height: auto; /* subtract header height */
+      overflow-y: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0 1rem 1rem;
+      line-height: 1.6;
+      font-size: 0.85rem;
+    ">
+    {% assign news_items = site.news | sort: 'date' | reverse %}
+    {% assign current_year = "" %}
+    {% assign this_year = 'now' | date: "%Y" %}
+    {% for item in news_items %}
+    {% assign year = item.date | date: "%Y" %}
+    {% assign stripped = item.content | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', ''
+    %}
+    {% if year != current_year %}
+    <!-- {% unless year == this_year %}
+    {% endunless %} -->
+    <li style="text-align: left; font-weight: bold; margin: 0.5rem 0; color: #666;">
+      <h1>{{ year }}</h1>
+    </li>
+    {% assign current_year = year %}
+    {% endif %}
+    <li style="padding: 0.75rem 1rem; 
+          margin-bottom: 0.5rem; 
+          border: 1px solid #ddd; 
+          border-radius: 6px; 
+          background: #fff; 
+          color: #000;">
+      <div style="margin-bottom: 0.3rem; color: #000;">
+        {% if item.link != "" %}
+        <em style="color: #555;">[{{ item.date | date: "%B %Y" }}]</em> {{ stripped }} <a href="{{ item.link }}"
+          target="_blank" style="font-weight: 500">Read More...</a>
+        {% else %}
+        <em style="color: #555;">[{{ item.date | date: "%B %Y" }}]</em> {{ stripped }}
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -15,7 +15,7 @@ layout: default
 {% endif %}
 
 <div id="main" class="about-layout" role="main" style="display: flex; align-items: flex-start; gap: 2rem;">
-  <div class="sidebar-container" style="flex:0 0 260px;">
+  <div class="sidebar-container" style="flex:0 0 220px;">
     {% include sidebar.html %}
   </div>
   <div class="main-container" style="display: flex; 
@@ -124,10 +124,9 @@ layout: default
       {% endif %}
     </article>
   </div>
-  <div class="news-container" style="flex: 0 0 450px; align-self: stretch; position:sticky; top: 5.5rem;">
-    <div style="margin-top:2rem;">
-      <h2 style="margin-bottom:1rem;">🎓 Education</h2>
-
+  <div class="education-container" style="flex: 0 0 450px; align-self: stretch; position:sticky; top: 5rem;">
+    <div id="education" class="education-cards" style="position:sticky; top: 3.5rem;">
+      <h2>🎓 Education</h2>
       <!-- Card 1 -->
       <div style="
      display: flex;
@@ -148,13 +147,12 @@ layout: default
             <strong>Stevens Institute of Technology</strong>
           </div>
           <!-- degree and GPA below -->
-          <em>M.S. in Applied Artificial Intelligence</em><br>
+          <em>M.S. Applied Artificial Intelligence</em><br>
           <em>Sept 2023 – May 2025</em><br>
           <!-- GPA -->
           GPA: 3.9/4
         </div>
       </div>
-
 
       <!-- Card 2 -->
       <div style="
@@ -173,7 +171,7 @@ layout: default
         <div style="flex:1">
           <!-- flex row for name + dates -->
           <div style="display:flex; justify-content:space-between; align-items:center;">
-            <strong>Rajiv Gandhi Institute of Technology</strong>
+            <strong>Rajiv Gandhi Institute of Technology, <br>Mumbai University</strong>
           </div>
           <!-- degree and GPA below -->
           <em>B.E. Computer Enigineering</em><br>
@@ -181,70 +179,38 @@ layout: default
           GPA: 8.81/10
         </div>
       </div>
-    </div>
-    <aside id="about-news" style="
-         position: sticky;
-         top: 5.5rem;
-         flex-basis: 300px;
-         background: #fafafa;
-         border-radius: 8px;
-         padding: 1rem;
-         box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-         font-size: 0.95rem;
-         line-height: 1.6;
-         /* color: black; */
-         max-height: 45vh;
-         overflow-y: hidden;
-         flex-shrink: 1;
-       ">
+
+
+      <h2>🏅 Honors/Awards</h2>
+      <!-- Card 1 -->
       <div style="
-           position: sticky;
-           top: 0;
-           /* background: #fafafa; */
-           padding-bottom: 1rem;
-           font-weight: bold;
-           z-index: 2;
-           font-size: 1.2rem;
-         ">
-        📰 News
-      </div>
-      <!-- <ul id="news-list" style="list-style-type: none; padding-left: 0; margin: 0;"> -->
-      <ul id="news-list" style="
-      max-height: calc(45vh - 4rem); /* subtract header height */
-      overflow-y: auto;
-      list-style: none;
-      margin: 0;
-      padding: 0 1rem 1rem;
-      line-height: 1.6;
-      font-size: 0.85rem;
-    ">
-        {% assign news_items = site.news | sort: 'date' | reverse %}
-        {% assign current_year = "" %}
-        {% assign this_year = 'now' | date: "%Y" %}
-        {% for item in news_items %}
-        {% assign year = item.date | date: "%Y" %}
-        {% assign stripped = item.content | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', '' %}
-        {% if year != current_year %}
-        {% unless year == this_year %}
-        <li style="text-align: center; font-weight: bold; margin: 0.5rem 0; color: #666;">{{ year }}</li>
-        {% endunless %}
-        {% assign current_year = year %}
-        {% endif %}
-        <li
-          style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #000;">
-          <div style="margin-bottom: 0.3rem; color: #000;">
-            {% if item.link != "" %}
-            [{{ item.date | date: "%B %Y" }}] <a href="{{ item.link }}"
-              style="text-decoration: none; color: inherit;">{{ stripped }}</a>
-            {% else %}
-            [{{ item.date | date: "%B %Y" }}] {{ stripped }}
-            {% endif %}
+     display: flex;
+     align-items: center;
+     background: #fff;
+     border: 1px solid #e2e8f0;
+     border-radius: 8px;
+     padding: 0rem;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+     font-size: 0.8rem;
+   ">
+        <div style="flex:1">
+          <!-- flex row for name + dates -->
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <ul style="font-weight: 700;">
+              <li>1<sup>st</sup> Place ECE Research Scholarship - Spring 2024</li>
+              <li>Provost's Masters Fellowship - Fall 2023</li>
+            </ul>
           </div>
-        </li>
-        {% endfor %}
-      </ul>
-    </aside>
+          <!-- <div style="display:flex; justify-content:space-between; align-items:center;">
+            <strong>Provost's Masters Fellowship - Fall 2023</strong>
+          </div> -->
+        </div>
+      </div>
+    </div>
   </div>
+
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
   <div class="page__related">

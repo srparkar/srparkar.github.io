@@ -11,4 +11,4 @@ redirect_from:
 
 If the embedded PDF below does not load, you can [download it here](/files/SaurabhParkar_CV.pdf){:target="_blank"}.
 
-<embed src="/files/SaurabhParkar_CV.pdf#zoom=115" width="100%" height="800px" type="application/pdf">
+<embed src="/files/SaurabhParkar_CV.pdf#zoom=115" width="100%" height="900px" type="application/pdf">
