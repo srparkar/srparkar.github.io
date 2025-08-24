@@ -60,16 +60,16 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
       line-height: 1.6;
       font-size: 0.85rem;
     ">
-        {% assign news_items = site.news | sort: 'date' | reverse | slice: 0,6 %}
+        {% assign news_items = site.news | sort: 'date' | reverse | slice: 1,6 %}
         {% assign current_year = "" %}
         {% assign this_year = 'now' | date: "%Y" %}
         {% for item in news_items %}
         {% assign year = item.date | date: "%Y" %}
         {% assign stripped = item.content | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', '' %}
         {% if year != current_year %}
-        {% unless year == this_year %}
+        <!-- {% unless year == this_year %}
+        {% endunless %} -->
         <li style="text-align: center; font-weight: bold; margin: 0.5rem 0; color: #666;">{{ year }}</li>
-        {% endunless %}
         {% assign current_year = year %}
         {% endif %}
         <li style="padding: 0.75rem 1rem; 
