@@ -6,6 +6,7 @@ image: "/images/isac-overview.png"
 layout: single
 date: 2025-04-30
 tags: AI ML mmWave-sensing wireless-sensing ISAC FMCW 5G-NR
+link: ""
 author_profile: true
 ---
 

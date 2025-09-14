@@ -4,6 +4,7 @@ excerpt: "PyTorch-based GAN trained on CIFAR-10 for image synthesis"
 collection: projects
 layout: single
 image: "/images/gan.png"
+link: ""
 author_profile: true
 ---
 

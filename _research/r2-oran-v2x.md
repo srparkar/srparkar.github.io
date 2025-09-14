@@ -6,6 +6,7 @@ image: "/images/v2x-oran.png"
 layout: single
 date: 2024-08-20
 tags: AI ML O-RAN Next-G_networks Vehicle-Networks Vehicle-to-Everything (V2X)
+link: ""
 author_profile: true
 ---
 

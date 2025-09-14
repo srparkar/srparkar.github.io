@@ -7,9 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-This page contains a list of my academic projects. For research projects please see <a
-  href="{{ site.baseurl }}/research/">Research</a>.
-
 {% for post in site.projects reversed %}
 <!-- {% include archive-single.html %} -->
 <div style="
@@ -27,12 +24,28 @@ This page contains a list of my academic projects. For research projects please 
     style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin-right: 1rem;">
   <div style="flex:1">
     <div style="display:flex; justify-content:space-between; align-items: normal;">
-      <strong style="font-size: 1.5em;">{{ post.title | escape }}</strong>
+      <strong style="font-size: 1.5em;">
+        {% if post.link != "" %}
+        <a href="{{ post.link }}" rel="permalink" style="color:#494E52; text-decoration: none;" 
+        onmouseover="this.style.color='#52ADC8'" onmouseout="this.style.color='#494E52'">
+        {{ post.title | escape }}
+      </a>
+        {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="color:#494E52; text-decoration: none;" 
+        onmouseover="this.style.color='#52ADC8'" onmouseout="this.style.color='#494E52'">
+        {{ post.title | escape }}
+      </a>
+        {% endif %}
+      </strong>
     </div>
     <p class="archive__item-excerpt" itemprop="description" style="font-size: 1.1em;">
       {% assign excerpt_text = post.excerpt | markdownify | strip_html | newline_to_br %}
       {{ excerpt_text | truncate: 500, "" }}
+      <!-- {% if post.link != "" %}
+      <strong><a href="{{ post.link }}" rel="permalink"> Read more...</a></strong>
+      {% else %}
       <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more...</a></strong>
+      {% endif %} -->
     </p>
   </div>
 </div>
