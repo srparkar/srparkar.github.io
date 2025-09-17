@@ -1,0 +1,115 @@
+---
+permalink: /people/
+title: "Collaborators"
+layout: single
+author_profile: true
+---
+<style>
+  /* Academic Cards — color scheme aligned with your UL version */
+  .academic-cards {
+    display: grid;
+    gap: 14px;
+  }
+
+  .academic-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
+  }
+
+  /* Hover "pop" effect */
+  .academic-card:hover {
+    border-color: #dcdcdc;
+    box-shadow:
+      0 8px 16px rgba(0,0,0,0.08),
+      0 3px 6px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+  }
+
+  .academic-card a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #d97c5f; /* your accent */
+    transition: text-decoration-color .2s ease;
+  }
+  .academic-card a:hover {
+    text-decoration: underline; /* underline only on name hover */
+  }
+
+  .academic-card .role {
+    color: #000;
+    margin-top: 2px;
+  }
+
+  .academic-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .academic-badge {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .academic-card { transition: none; }
+    .academic-card:hover { transform: none; }
+  }
+</style>
+
+<section class="academic-cards" aria-labelledby="academic-heading">
+  <h2 id="academic-heading">🏫 Academic</h2>
+
+  <!-- Card 1 -->
+  <article class="academic-card">
+    <div>
+      <a href="https://xueshannon.github.io" target="_blank" rel="noopener">Prof. Xiaochan Xue</a>
+      <div class="role">Assistant Professor, <strong>University of Hawaiʻi at Mānoa</strong></div>
+    </div>
+    <div class="academic-badges" style="margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
+      <!-- <span class="academic-badge" style="font-size:0.5rem;">PhD Advisor</span> -->
+      <span class="academic-badge" style="font-size:0.5rem;">Mentor</span>
+      <span class="academic-badge" style="font-size:0.5rem;">Co-Author</span>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="academic-card" >
+    <div>
+      <a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" 
+         target="_blank" rel="noopener">Prof. Shucheng Yu</a>
+      <div class="role">Associate Chair of Graduate CSE Department, <strong>Yeshiva University</strong></div>
+    </div>
+    <div class="academic-badges" style="margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
+      <span class="academic-badge" style="font-size:0.5rem;">MS. Thesis Advisor</span>
+      <span class="academic-badge" style="font-size:0.5rem;">Co-Author</span>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="academic-card">
+    <div>
+      <a href="https://www.stevens.edu/profile/klu2" target="_blank" rel="noopener">Prof. Kevin Lu</a>
+      <div class="role">Teaching Professor &amp; Associate Dean (UG), <strong>Stevens Institute of Technology</strong></div>
+    </div>
+    <div class="academic-badges" style="margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
+      <span class="academic-badge" style="font-size:0.5rem;">MS. Thesis Reader</span>
+    </div>
+  </article>
+</section>
