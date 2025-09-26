@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 {% include base_path %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -124,91 +123,81 @@ layout: default
       {% endif %}
     </article>
   </div>
-  <div class="education-container" style="flex: 0 0 450px; align-self: stretch; position:sticky; top: 5rem;">
-    <div id="education" class="education-cards" style="position:sticky; top: 3.5rem;">
-      <h2>🎓 Education</h2>
-      <!-- Card 1 -->
+  <!-- <div class="education-container" style="
+  flex: 0 0 450px; 
+  align-self: stretch; 
+  position:sticky; 
+  top: 5rem;">
+    
+  </div> -->
+  <div class="news-container" style="flex: 0 0 450px; align-self: stretch; position:sticky; top: 5.5rem;">
+    <aside id="about-news" style="
+         position: sticky;
+         top: 3rem;
+         flex-basis: 300px;
+         padding: 1rem;
+         font-size: 0.8rem;
+         /* line-height: 1.6; */
+         color: black;
+         max-height: 55vh;
+         overflow-y: hidden;
+         flex-shrink: 1;
+         ">
       <div style="
-     display: flex;
-     align-items: center;
-     background: #fff;
-     border: 1px solid #e2e8f0;
-     border-radius: 8px;
-     padding: 1rem;
-     margin-bottom: 1rem;
-     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-     font-size: 0.8rem;
-   ">
-        <img src="/images/stevens-logo.png" alt="Stevens Institute logo"
-          style="width:80px; height:80px; object-fit:contain; margin-right:1rem;">
-        <div style="flex:1">
-          <!-- flex row for name + dates -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <strong>Stevens Institute of Technology</strong>
-          </div>
-          <!-- degree and GPA below -->
-          <em>M.S. Applied Artificial Intelligence</em><br>
-          <em>Sept 2023 – May 2025</em><br>
-          <!-- GPA -->
-          GPA: 3.9/4
-        </div>
+        position: sticky;
+        top: 0;
+        /* background: #fafafa; */
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #444444;
+        z-index: 2;
+        ">
+        📰 Updates
       </div>
-
-      <!-- Card 2 -->
-      <div style="
-     display: flex;
-     align-items: center;
-     background: #fff;
-     border: 1px solid #e2e8f0;
-     border-radius: 8px;
-     padding: 1rem;
-     margin-bottom: 1rem;
-     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-     font-size: 0.8rem;
-   ">
-        <img src="/images/rgit-logo.jpeg" alt="MCT's RGIT logo"
-          style="width:80px; height:80px; object-fit:contain; margin-right:1rem;">
-        <div style="flex:1">
-          <!-- flex row for name + dates -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <strong>Rajiv Gandhi Institute of Technology, <br>Mumbai University</strong>
+      <!-- <ul id="news-list" style="list-style-type: none; padding-left: 0; margin: 0;"> -->
+      <ul id="news-list" style="
+      max-height: calc(55vh - 3rem); /* subtract header height */
+      overflow-y: auto;
+      list-style: none;
+      margin: 0;
+      background: #fafafa;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 0 1rem 1rem;
+      line-height: 1.6;
+      ">
+        {% assign news_items = site.news | sort: 'date' | reverse %}
+        {% assign current_year = "" %}
+        {% assign this_year = 'now' | date: "%Y" %}
+        {% for item in news_items %}
+        {% assign year = item.date | date: "%Y" %}
+        {% assign stripped = item.content | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', '' %}
+        {% if year != current_year %}
+        <!-- {% unless year == this_year %}
+        {% endunless %} -->
+        <li style="text-align: center; font-weight: bold; margin: 0.5rem 0; color: #666;">{{ year }}</li>
+        {% assign current_year = year %}
+        {% endif %}
+        <li style="padding: 0.75rem 1rem; 
+          margin-bottom: 0.5rem; 
+          border: 1px solid #ddd; 
+          border-radius: 6px; 
+          background: #fff; 
+          color: #000;">
+          <div style="margin-bottom: 0.3rem; color: #000;">
+            {% if item.link != "" %}
+            <em style="color: #555;">[{{ item.date | date: "%B %Y" }}]</em> {{ stripped }} <a href="{{ item.link }}"
+              style="font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Read More...</a>
+            {% else %}
+            <em style="color: #555;">[{{ item.date | date: "%B %Y" }}]</em> {{ stripped }}
+            {% endif %}
           </div>
-          <!-- degree and GPA below -->
-          <em>B.E. Computer Enigineering</em><br>
-          <em>Sept 2019 – May 2023</em><br>
-          GPA: 8.81/10
-        </div>
-      </div>
-
-
-      <h2>🏅 Honors/Awards</h2>
-      <!-- Card 1 -->
-      <div style="
-     display: flex;
-     align-items: center;
-     background: #fff;
-     border: 1px solid #e2e8f0;
-     border-radius: 8px;
-     padding: 0rem;
-     margin-top: 1rem;
-     margin-bottom: 1rem;
-     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-     font-size: 0.8rem;
-   ">
-        <div style="flex:1">
-          <!-- flex row for name + dates -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <ul style="font-weight: 700;">
-              <li>1<sup>st</sup> Place ECE Research Scholarship - Spring 2024</li>
-              <li>Provost's Masters Fellowship - Fall 2023</li>
-            </ul>
-          </div>
-          <!-- <div style="display:flex; justify-content:space-between; align-items:center;">
-            <strong>Provost's Masters Fellowship - Fall 2023</strong>
-          </div> -->
-        </div>
-      </div>
-    </div>
+        </li>
+        {% endfor %}
+        <!-- <li><a href="/updates/" style="color: #333333; font-weight: 500; "> Past Updates<sup>↗</sup></a></li> -->
+      </ul>
+    </aside>
   </div>
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
