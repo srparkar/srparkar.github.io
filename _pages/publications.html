@@ -9,10 +9,56 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+{% include base_path %} 
+
+
+
+<div class="news-container" style="flex: 0 0 450px; align-self: stretch; ;">
+  <ul id="news-list" style="
+      max-height: auto; /* subtract header height */
+      overflow-y: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0 1rem 1rem;
+      line-height: 1.6;
+      font-size: 0.85rem;
+    ">
+    {% assign news_items = site.publications | sort: 'date' | reverse %}
+    {% assign current_year = "" %}
+    {% assign this_year = 'now' | date: "%Y" %}
+    {% for item in news_items %}
+    {% assign year = item.date | date: "%Y" %}
+    {% assign stripped = item.title | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', ''
+    %}
+    {% if year != current_year %}
+    <!-- {% unless year == this_year %}
+    {% endunless %} -->
+    <li style="text-align: left; font-weight: bold; margin: 0.5rem 0; color: #666;">
+      <h1>{{ year }}</h1>
+    </li>
+    {% assign current_year = year %}
+    {% endif %}
+    <li style="padding: 0.75rem 1rem; 
+          margin-bottom: 0.5rem; 
+          border: 1px solid #ddd; 
+          border-radius: 6px; 
+          background: #fff; 
+          color: #000;">
+      <div style="margin-bottom: 0.3rem; color: #000;">
+        {% if item.paperurl != "" %}
+        {{ stripped }} <a href="{{ item.paperurl }}" target="_blank" style="font-weight: 500">Paper</a>
+        {% else %}
+        {{ stripped }}
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
 
 <!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
+<!-- {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
@@ -30,7 +76,4 @@ author_profile: true
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
-{% endif %}
-
-
-
+{% endif %} -->

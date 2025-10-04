@@ -187,10 +187,10 @@ layout: default
           color: #000;">
           <div style="margin-bottom: 0.3rem; color: #000;">
             {% if item.link != "" %}
-            <em style="color: #555;">[{{ item.date | date: "%B %Y" }}]</em> {{ stripped }} <a href="{{ item.link }}"
+            <em style="color: #555;">[{{ item.date | date: "%b %Y" }}]</em> {{ stripped }} <a href="{{ item.link }}"
               style="font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Read More...</a>
             {% else %}
-            <em style="color: #555;">[{{ item.date | date: "%B %Y" }}]</em> {{ stripped }}
+            <em style="color: #555;">[{{ item.date | date: "%b %Y" }}]</em> {{ stripped }}
             {% endif %}
           </div>
         </li>

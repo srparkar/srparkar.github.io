@@ -11,12 +11,12 @@ main:
   - title: "Research"
     url: /research/
   
+  - title: "Publications"
+    url: /publications/
+  
   # - title: "Teaching"
   #   url: /teaching/  
 
-  # - title: "Publications"
-  #   url: /publications/
-  
   # - title: "Talks"
   #   url: /talks/    
   
@@ -29,7 +29,10 @@ main:
     
   - title: "Blog Posts"
     url: /posts/
-    
+
+  # - title: "Updates"
+  #   url: /updates/
+
   - title: "CV"
     url: /cv/
     
