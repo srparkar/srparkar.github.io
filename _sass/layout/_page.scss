@@ -28,8 +28,8 @@
   
   @include breakpoint($x-large) {
     // max-width: $x-large;
-    // margin-left: 312.5px;
-    margin-left: calc(((100vw - #{$x-large}) / 2));
+    margin-left: none;
+    // margin-left: calc(((100vw - #{$x-large}) / 2));
     max-width: none !important;
   }
 }
@@ -58,7 +58,7 @@
   }
 
   /* 2) Make your news bar full-width and drop it last */
-  .education-container {
+  .news-container {
     flex: 0 0 auto       !important;
     width: 100%          !important;
     order: 3             !important;

@@ -14,6 +14,9 @@ main:
   - title: "Publications"
     url: /publications/
   
+  - title: "Collaborators"
+    url: /people/
+    
   # - title: "Teaching"
   #   url: /teaching/  
 
@@ -24,9 +27,6 @@ main:
   - title: "Projects"
     url: /projects/    
     
-  - title: "People"
-    url: /people/
-    
   - title: "Blog Posts"
     url: /posts/
 
@@ -35,8 +35,6 @@ main:
 
   - title: "CV"
     url: /cv/
-    
-
     
   # - title: "CV"
   #   url: /cv-json/
