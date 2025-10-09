@@ -5,7 +5,7 @@ layout: splash
 author_profile: true
 ---
 <style>
-  /* Academic Cards — color scheme aligned with your UL version */
+  /* Academic Cards — your original styles (max-width removed) */
   .academic-cards {
     display: grid;
     gap: 14px;
@@ -23,6 +23,7 @@ author_profile: true
     color: #000;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
+    /* max-width removed so cards can expand within their columns */
   }
 
   /* Hover "pop" effect */
@@ -71,44 +72,100 @@ author_profile: true
     .academic-card { transition: none; }
     .academic-card:hover { transform: none; }
   }
+
+  /* ✅ New: Responsive two-column wrapper */
+  .two-col-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;           /* mobile: stack */
+    align-items: start;
+  }
+  @media (min-width: 900px) {
+    .two-col-grid {
+      grid-template-columns: 1fr 1fr;     /* desktop: two columns */
+    }
+  }
 </style>
 
-<section class="academic-cards" aria-labelledby="academic-heading">
-  <h2 id="academic-heading">🏫 Academic</h2>
+<!-- ✅ New: Two-column container -->
+<div class="two-col-grid">
+  <!-- LEFT COLUMN: Academic (unchanged classes/structure) -->
+  <section class="academic-cards" aria-labelledby="academic-heading">
+    <h2 id="academic-heading">🏫 Academic</h2>
 
-  <!-- Card 1 -->
-  <article class="academic-card">
-    <div>
-      <a href="https://xueshannon.github.io" target="_blank" rel="noopener">Prof. Xiaochan Xue</a>
-      <div class="role">Assistant Professor, <strong>University of Hawaiʻi at Mānoa</strong></div>
-    </div>
-    <div class="academic-badges" >
-      <span class="academic-badge" style="font-size:0.5rem;margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">PhD Advisor</span>
-      <!-- <span class="academic-badge" style="font-size:0.5rem;margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">Co-Author</span> -->
-    </div>
-  </article>
+    <!-- Card 1 -->
+    <article class="academic-card">
+      <div>
+        <a href="https://luna-xue.github.io/" target="_blank" rel="noopener">Prof. Xiaochan Xue</a>
+        <div class="role">Assistant Professor<br><strong>University of Hawaiʻi at Mānoa</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style="font-size:0.5rem; margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">PhD Advisor</span>
+      </div>
+    </article>
 
-  <!-- Card 2 -->
-  <article class="academic-card" >
-    <div>
-      <a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" 
-         target="_blank" rel="noopener">Prof. Shucheng Yu</a>
-      <div class="role">Associate Chair of Graduate CSE Department, <strong>Yeshiva University</strong></div>
-    </div>
-    <div class="academic-badges">
-      <span class="academic-badge" style="font-size:0.5rem; margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">MS. Thesis Advisor</span>
-      <!-- <span class="academic-badge" style="font-size:0.5rem; margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">Co-Author</span> -->
-    </div>
-  </article>
+    <!-- Card 2 -->
+    <article class="academic-card">
+      <div>
+        <a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" target="_blank" rel="noopener">Prof. Shucheng Yu</a>
+        <div class="role">Associate Chair of Graduate CSE Department<br><strong>Yeshiva University</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style="font-size:0.5rem; margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">MS. Thesis Advisor</span>
+      </div>
+    </article>
 
-  <!-- Card 3 -->
-  <article class="academic-card">
-    <div>
-      <a href="https://www.stevens.edu/profile/klu2" target="_blank" rel="noopener">Prof. Kevin Lu</a>
-      <div class="role">Teaching Professor &amp; Associate Dean (UG), <strong>Stevens Institute of Technology</strong></div>
-    </div>
-    <div class="academic-badges">
-      <span class="academic-badge" style="font-size:0.5rem; margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">MS. Thesis Reader</span>
-    </div>
-  </article>
-</section>
+    <!-- Card 3 -->
+    <article class="academic-card">
+      <div>
+        <a href="https://www.stevens.edu/profile/klu2" target="_blank" rel="noopener">Prof. Kevin Lu</a>
+        <div class="role">Teaching Professor &amp; Associate Dean (UG)<br><strong>Stevens Institute of Technology</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style="font-size:0.5rem; margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">MS. Thesis Reader</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- RIGHT COLUMN: Affiliations (same classes reused) -->
+  <section class="academic-cards" aria-labelledby="affiliations-heading">
+    <h2 id="affiliations-heading">🔬 Affiliations</h2>
+
+    <!-- Affiliation 1 -->
+     <!-- <article class="academic-card">
+      <div>
+        <a href="" target="_blank" rel="noopener">Dr. Xiaochan Xue's Research Lab</a>
+        <div class="role">Doctoral Research Assistant<br><strong>University of Hawaii at Mānoa</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style ="font-size: 0.8rem;">2026-Present</span>
+      </div>
+    </article> -->
+
+    <!-- Affiliation 2 -->
+    <article class="academic-card">
+      <div>
+        <a href="https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab" target="_blank" rel="noopener">AISecLab</a>
+        <div class="role">Graduate Research Assistant<br><strong>Stevens Institute of Technology</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style ="font-size: 0.8rem;">2024-2025</span>
+      </div>
+    </article>
+
+    <!-- Duplicate for more affiliations -->
+    <!--
+    <article class="academic-card">
+      <div>
+        <a href="https://example-lab-3.net" target="_blank" rel="noopener">Example Lab 3</a>
+        <div class="role">Research Affiliate<br><strong>Org / Center</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style ="font-size: 0.8rem;">Sensing</span>
+        <span class="academic-badge">Security</span>
+      </div>
+    </article>
+    -->
+  </section>
+</div>
+

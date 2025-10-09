@@ -5,6 +5,6 @@ collection: projects
 layout: single
 image: "/images/afrl.png"
 link: https://wbi-innovates.zohobackstage.com/afrlsdr
-author_profile: true
+author_profile: false
 ---
 

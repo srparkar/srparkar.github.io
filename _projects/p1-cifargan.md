@@ -5,7 +5,7 @@ collection: projects
 layout: single
 image: "/images/gan.png"
 link: ""
-author_profile: true
+author_profile: false
 ---
 
 Constructed and trained a GAN from scratch using CIFAR-10. Enabled generation of realistic synthetic images across 10 classes using custom generator and discriminator networks built in PyTorch.

@@ -4,7 +4,8 @@ excerpt: "SVM-C and K-means based classifier for water-land segmentation."
 image: "/images/boundary.png"
 collection: projects
 layout: single
-author_profile: true
+author_profile: false
+
 link: ""
 ---
 

@@ -5,7 +5,7 @@ collection: research
 image: "/images/federated-oran.png"
 layout: single
 date: 2024-06-20
-author_profile: true
+author_profile: false
 link: ""
 tags: AI ML O-RAN Next-G_networks
 ---

@@ -7,7 +7,7 @@ layout: single
 date: 2025-04-30
 tags: AI ML mmWave-sensing wireless-sensing ISAC FMCW 5G-NR
 link: ""
-author_profile: true
+author_profile: false
 ---
 
 Accurate detection of respiratory patterns is critical for the early diagnosis of respiratory disorders, timely medical intervention, and long-term health monitoring. Conventional respiration monitoring techniques typically rely on specialized medical equipment and trained personnel, which constrains their applicability for real-time use in home care and self-monitoring. Recent advancements in contactless vital sign sensing have enabled the monitoring of key physiological indicators, such as respiration, without the need for invasive instrumentation. Among these, millimeter-wave (mmWave) technologies have shown promise for non-intrusive respiratory monitoring. However, existing mmWave-based approaches often require dedicated radar hardware and exclusive spectrum resources, thereby limiting their adaptability across diverse and resource-constrained environments.
