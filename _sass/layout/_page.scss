@@ -28,7 +28,7 @@
   
   @include breakpoint($x-large) {
     // max-width: $x-large;
-    margin-left: none;
+    margin-left: 60px;
     // margin-left: calc(((100vw - #{$x-large}) / 2));
     max-width: none !important;
   }
