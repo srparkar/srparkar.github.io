@@ -14,8 +14,11 @@ main:
   - title: "Publications"
     url: /publications/
   
+  - title: "Projects"
+    url: /projects/    
+    
   - title: "Collaborators"
-    url: /people/
+    url: /colabs/
     
   # - title: "Teaching"
   #   url: /teaching/  
@@ -24,9 +27,6 @@ main:
   #   url: /talks/    
   
 
-  - title: "Projects"
-    url: /projects/    
-    
   - title: "Blog Posts"
     url: /posts/
 

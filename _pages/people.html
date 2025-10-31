@@ -1,14 +1,22 @@
 ---
-permalink: /people/
+permalink: /colabs/
 title: "Collaborators"
 layout: splash
 author_profile: true
+redirect_from:
+  - /people/
 ---
 <style>
   /* Academic Cards — your original styles (max-width removed) */
   .academic-cards {
     display: grid;
     gap: 14px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) {
+    .academic-cards {
+      grid-template-columns: 450px 450px 450px;  
+    }
   }
 
   .academic-card {
@@ -16,13 +24,14 @@ author_profile: true
     justify-content: space-between;
     gap: 16px;
     align-items: flex-start;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.5rem;
     border: 2px solid #ddd;
     border-radius: 6px;
     background: #fff;
     color: #000;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
+    font-size: 0.85rem;
+    transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease, scale .25s ease;
     /* max-width removed so cards can expand within their columns */
   }
 
@@ -33,6 +42,7 @@ author_profile: true
       0 8px 16px rgba(0,0,0,0.08),
       0 3px 6px rgba(0,0,0,0.06);
     transform: translateY(-2px);
+    scale: 105%;
   }
 
   .academic-card a {
@@ -80,18 +90,13 @@ author_profile: true
     grid-template-columns: 1fr;           /* mobile: stack */
     align-items: start;
   }
-  @media (min-width: 900px) {
-    .two-col-grid {
-      grid-template-columns: 1fr 1fr;     /* desktop: two columns */
-    }
-  }
 </style>
 
 <!-- ✅ New: Two-column container -->
 <div class="two-col-grid">
   <!-- LEFT COLUMN: Academic (unchanged classes/structure) -->
+  <h2 id="academic-heading">🏫 Academic</h2>
   <section class="academic-cards" aria-labelledby="academic-heading">
-    <h2 id="academic-heading">🏫 Academic</h2>
 
     <!-- Card 1 -->
     <article class="academic-card">
@@ -128,19 +133,19 @@ author_profile: true
   </section>
 
   <!-- RIGHT COLUMN: Affiliations (same classes reused) -->
+  <h2 id="affiliations-heading">🔬 Labs & Research Groups</h2>
   <section class="academic-cards" aria-labelledby="affiliations-heading">
-    <h2 id="affiliations-heading">🔬 Affiliations</h2>
 
     <!-- Affiliation 1 -->
-     <!-- <article class="academic-card">
+     <article class="academic-card">
       <div>
-        <a href="" target="_blank" rel="noopener">Dr. Xiaochan Xue's Research Lab</a>
+        <a href="" rel="noopener">NextG Lab</a>
         <div class="role">Doctoral Research Assistant<br><strong>University of Hawaii at Mānoa</strong></div>
       </div>
       <div class="academic-badges">
-        <span class="academic-badge" style ="font-size: 0.8rem;">2026-Present</span>
+        <span class="academic-badge" style ="font-size: 0.65rem;">Current</span>
       </div>
-    </article> -->
+    </article>
 
     <!-- Affiliation 2 -->
     <article class="academic-card">
@@ -149,7 +154,7 @@ author_profile: true
         <div class="role">Graduate Research Assistant<br><strong>Stevens Institute of Technology</strong></div>
       </div>
       <div class="academic-badges">
-        <span class="academic-badge" style ="font-size: 0.8rem;">2024-2025</span>
+        <span class="academic-badge" style ="font-size: 0.65rem;">2024-2025</span>
       </div>
     </article>
 

@@ -7,11 +7,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<!-- # 🧑‍🔬About Me -->
-<p style="text-align: justify; text-justify: inter-word; color: #222222">
+<p style="text-align: justify; text-justify: inter-word; color: #222222; font-size:1rem;">
 I am an incoming <em style="color: #333333; font-weight: 475;"> Doctoral Researcher</em> at <em><a href="https://ece.hawaii.edu/home/" target="_blank" style="color: #333333; font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"> University of Hawaii at Mānoa</a></em>, where I will pursue my Ph.D. under the guidance of <a href="https://luna-xue.github.io/" target="_blank" style="color: #333333; font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Dr. Xiaochan Xue</a>. My research focuses on advancing next-generation wireless networks, with primary focus on O-RAN architecture, integrated sensing and communication (ISAC), and network security. Looking ahead, I aim to advance intelligent, secure, and adaptable 6G/Next-G systems to enable applications in localization and spatial sensing, autonomous networking, IoT connectivity, and resilient cyber-physical infrastructures. My work spans Sub-6 GHz and mmWave 5G/6G networks, O-RAN and AI-RAN architectures, and joint radar-communication (ISAC) systems, integrating deep learning for signal and channel intelligence, and leveraging edge-intelligent SDR testbeds for real-time experimentation across healthcare, vehicular, and smart-environment applications.
 </p>
-<p style="text-align: justify; text-justify: inter-word; color: #222222">
+<p style="text-align: justify; text-justify: inter-word; color: #222222; font-size:1rem;">
 I completed my graduate studies in <em style="color: #333333; font-weight: 475;">M.S. Applied Artificial Intelligence </em> from <em><a href="https://www.stevens.edu/" target="_blank" style="color: #333333; font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Stevens Institute of Technology</a>,</em> and undergraduate studies in <em style="color: #333333; font-weight: 475;">Computer Engineering </em> at <em><a href="https://www.mctrgit.ac.in/" target="_blank" style="color: #333333; font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" 
    onmouseout="this.style.textDecoration='none'">Rajiv Gandhi Institute of Technology (Mumbai University)</a></em>.
 </p>
@@ -49,17 +48,17 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
   }
 </style>
 
-<div class="two-col" style="display:flex; gap:2rem; align-items:flex-start; font-size: 0.9rem">
+<div class="two-col" style="display:flex; gap:2rem; align-items:flex-start;background:#fff; border:1px solid #e2e8f0;
+      border-radius:8px; padding:0.5rem; margin-bottom:0.5rem; box-shadow:0 1px 3px rgba(0,0,0,0.1);
+      font-size:0.75rem;">
   <!-- LEFT COLUMN: Education -->
-  <div id="education" class="education-cards" style="flex:1 1 55%;">
+  <div id="education" class="education-cards" style="flex:1 1 50%;">
     <h2 >🎓 Education</h2>
     <!-- Card 1 -->
     <div style="
-      display:flex; align-items:center; background:#fff; border:1px solid #e2e8f0;
-      border-radius:8px; padding:1rem; margin-bottom:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.1);
-      font-size:0.8rem;">
+      display:flex; align-items:center; margin-bottom:1rem;">
       <img src="/images/uhm.png" alt="University of Hawaii at Mānoa logo"
-           style="width:80px; height:80px; object-fit:contain; margin-right:1rem;">
+           style="width:40px; height:40px; object-fit:contain; margin-right:1rem;">
       <div style="flex:1">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <strong>University of Hawaii at Mānoa</strong>
@@ -70,11 +69,9 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     </div>
     <!-- Card 2 -->
     <div style="
-      display:flex; align-items:center; background:#fff; border:1px solid #e2e8f0;
-      border-radius:8px; padding:1rem; margin-bottom:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.1);
-      font-size:0.8rem;">
+      display:flex; align-items:center; margin-bottom:1rem;">
       <img src="/images/stevens-logo.png" alt="Stevens Institute logo"
-           style="width:80px; height:80px; object-fit:contain; margin-right:1rem;">
+           style="width:40px; height:40px; object-fit:contain; margin-right:1rem;">
       <div style="flex:1">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <strong>Stevens Institute of Technology</strong>
@@ -85,11 +82,9 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     </div>
     <!-- Card 3 -->
     <div style="
-      display:flex; align-items:center; background:#fff; border:1px solid #e2e8f0;
-      border-radius:8px; padding:1rem; margin-bottom:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.1);
-      font-size:0.8rem;">
+      display:flex; align-items:center; margin-bottom:1rem;">
       <img src="/images/rgit-logo.jpeg" alt="MCT's RGIT logo"
-           style="width:80px; height:80px; object-fit:contain; margin-right:1rem;">
+           style="width:40px; height:40px; object-fit:contain; margin-right:1rem;">
       <div style="flex:1">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <strong>Rajiv Gandhi Institute of Technology, Mumbai University</strong>
@@ -100,13 +95,11 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     </div>
   </div>
   <!-- RIGHT COLUMN: Honors (top) + Services (bottom) stacked -->
-  <div class="right-col" style="flex:1 1 45%; display:flex; flex-direction:column; gap:1rem;">
+  <div class="right-col" style="flex:1 1 50%; display:flex; flex-direction:column; gap:1rem;">
     <!-- Honors/Awards -->
     <div>
       <h2>🏅 Honors & Awards </h2>
-      <div style="
-        background:#fff; border:1px solid #e2e8f0; border-radius:8px;
-        padding:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.1); font-size:0.75rem;">
+      <div>
         <ul style="font-weight:700; margin:0; padding-left:1.2rem;">
           <li>1<sup>st</sup> Place ECE Research Scholarship - Spring 2024</li>
           <li>Provost's Masters Fellowship - Fall 2023</li>
@@ -116,9 +109,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     <!-- Services -->
     <div>
       <h2>📚 Services</h2>
-      <div style="
-        background:#fff; border:1px solid #e2e8f0; border-radius:8px;
-        padding:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.1); font-size:0.75rem;">
+      <div>
         <ul style="font-weight:700; margin:0; padding-left:1.2rem;">
           <li>1<sup>st</sup> iCNS/ECE Symposium on AI Research and Innovations (SIT)</li>
         </ul>

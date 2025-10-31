@@ -3,6 +3,8 @@ title: 'NSF CyberTraining: O-RAN-Based Cyberinfrastructure for Future-Generation
 date: 2025-06-04
 permalink: /posts/2025/06/NSF-CyberTraining25/
 tags: workshop ISAC mmWave-sensing O-RAN wireless-sensing
+author_profile: false
+layout: single
 ---
 
 At <em>**Stevens Institute of Technology**</em>, we held a month-long, NSF CyberTraining workshop designed to train Master’s students in **next-generation wireless technologies**. The program emphasized hands-on learning across key areas such as **Software-Defined Radios (SDRs)**, **mmWave sensing**, **Integrated Sensing and Communication (ISAC)**, and **Open Radio Access Networks (O-RAN)**. Through intensive weekly sessions covering the theoretical concepts and practical applications, participants engaged directly with real-world experimental platforms to build both foundational knowledge and technical fluency in advanced wireless systems.
@@ -38,7 +40,7 @@ Throughout the program, students will explore concepts of **28 GHz mmWave sens
   <img src="/images/20250611_154508.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
 
   <p style="text-align: center; margin-top: 0.75rem; font-size: 0.95rem; color: #000;">
-    ISAC concepts taught by <a href="https://xueshannon.github.io" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">Prof. Xiaochan Xue</a>.
+    ISAC concepts taught by <a href="https://luna-xue.github.io" target="_blank" rel="noopener noreferrer" style="color: #d97c5f;">Prof. Xiaochan Xue</a>.
   </p>
   <img src="/images/DSCN3483.jpg" alt="NSF CyberTraining Workshop Poster" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 4px;">
 
