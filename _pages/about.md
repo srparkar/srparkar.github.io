@@ -100,7 +100,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     <div>
       <h2>🏅 Honors & Awards </h2>
       <div>
-        <ul style="font-weight:700; margin:0; padding-left:1.2rem;">
+        <ul style="font-weight:700; margin:0; padding-left:1.2rem; list-style-type:none;" >
           <li>1<sup>st</sup> Place ECE Research Scholarship - Spring 2024</li>
           <li>Provost's Masters Fellowship - Fall 2023</li>
         </ul>
@@ -110,7 +110,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     <div>
       <h2>📚 Services</h2>
       <div>
-        <ul style="font-weight:700; margin:0; padding-left:1.2rem;">
+        <ul style="font-weight:700; margin:0; padding-left:1.2rem; list-style-type:none;">
           <li>1<sup>st</sup> iCNS/ECE Symposium on AI Research and Innovations (SIT)</li>
         </ul>
       </div>
