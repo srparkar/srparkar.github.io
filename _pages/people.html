@@ -86,15 +86,44 @@ redirect_from:
   /* ✅ New: Responsive two-column wrapper */
   .two-col-grid {
     display: grid;
-    gap: 1.25rem;
-    grid-template-columns: 1fr;           /* mobile: stack */
+    grid-template-columns: 1fr;       
     align-items: start;
   }
 </style>
-
 <!-- ✅ New: Two-column container -->
 <div class="two-col-grid">
-  <!-- LEFT COLUMN: Academic (unchanged classes/structure) -->
+  <h2 id="affiliations-heading">🔬 Labs & Research Groups</h2>
+  <section class="academic-cards" aria-labelledby="affiliations-heading">
+
+    <!-- Affiliation 1 -->
+     <article class="academic-card" >
+      <div style="display:flex; align-items:center;">
+        <img src="/images/WINGS.jpg" alt="WINGS Lab logo"
+           style="width:60px; height:60px; object-fit:contain; margin-right:1rem;">
+        <div class="role">
+          <a href="https://github.com/WINGS-UHM" target="_blank" rel="noopener">WINGS Lab</a><br>
+          Doctoral Research Assistant<br><strong>University of Hawaii at Mānoa</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style ="font-size: 0.65rem;">Current</span>
+      </div>
+    </article>
+
+    <!-- Affiliation 2 -->
+    <article class="academic-card">
+      <div style="display:flex; align-items:center;">
+        <img src="/images/aiseclab.jpg" alt="AISecLab logo"
+           style="width:60px; height:60px; object-fit:contain; margin-right:1rem;">
+        <div class="role">
+          <a href="https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab" target="_blank" rel="noopener">AISecLab</a><br>
+          Graduate Research Assistant<br><strong>Stevens Institute of Technology</strong></div>
+      </div>
+      <div class="academic-badges">
+        <span class="academic-badge" style ="font-size: 0.65rem;">2024-2025</span>
+      </div>
+    </article>
+
+  </section>
   <h2 id="academic-heading">🏫 Academic</h2>
   <section class="academic-cards" aria-labelledby="academic-heading">
 
@@ -131,34 +160,7 @@ redirect_from:
       </div>
     </article>
   </section>
-
-  <!-- RIGHT COLUMN: Affiliations (same classes reused) -->
-  <h2 id="affiliations-heading">🔬 Labs & Research Groups</h2>
-  <section class="academic-cards" aria-labelledby="affiliations-heading">
-
-    <!-- Affiliation 1 -->
-     <article class="academic-card">
-      <div>
-        <a href="" rel="noopener">NextG Lab</a>
-        <div class="role">Doctoral Research Assistant<br><strong>University of Hawaii at Mānoa</strong></div>
-      </div>
-      <div class="academic-badges">
-        <span class="academic-badge" style ="font-size: 0.65rem;">Current</span>
-      </div>
-    </article>
-
-    <!-- Affiliation 2 -->
-    <article class="academic-card">
-      <div>
-        <a href="https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab" target="_blank" rel="noopener">AISecLab</a>
-        <div class="role">Graduate Research Assistant<br><strong>Stevens Institute of Technology</strong></div>
-      </div>
-      <div class="academic-badges">
-        <span class="academic-badge" style ="font-size: 0.65rem;">2024-2025</span>
-      </div>
-    </article>
-
-    <!-- Duplicate for more affiliations -->
+    <!-- Duplicate for more affiliations if needed -->
     <!--
     <article class="academic-card">
       <div>
@@ -171,6 +173,5 @@ redirect_from:
       </div>
     </article>
     -->
-  </section>
 </div>
 
