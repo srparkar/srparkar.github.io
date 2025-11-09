@@ -15,15 +15,6 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
    onmouseout="this.style.textDecoration='none'">Rajiv Gandhi Institute of Technology (Mumbai University)</a></em>.
 </p>
 
-<!-- <div style="padding: 0.75rem 1rem; margin-bottom: 0.5rem; border: 2px solid #888; border-radius: 6px; background: #fff; color: #333333; ">
-  <strong>🔬 Research Interests:</strong>
-  <ul>
-    <li><strong>Wireless Communication:</strong> Sub-6 GHz, mmWave, 5G-NR, 6G, Next-G networks, O-RAN architectures, AI-RAN systems.</li>
-    <li><strong>Integrated Sensing and Communication (ISAC):</strong> Joint radar-communication systems for healthcare, vehicular networks, and smart environments.</li>
-    <li><strong>Machine Learning for Wireless Systems:</strong> Deep learning for signal classification, channel learning, and federated learning in edge devices.</li>
-    <li><strong>Edge Intelligence & SDR Experimentation:</strong> Real-time inference on SDR platforms; intelligent wireless testbeds.</li>
-  </ul>
-</div> -->
 <em>I am open to collabrative projects based on my interests you can reach to me at my  <a href="mailto:sparkar@hawaii.edu" style="color: #333333; font-weight: 500; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" 
    onmouseout="this.style.textDecoration='none'">email<sup>↗</sup></a></em>
 
@@ -52,7 +43,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
       border-radius:8px; padding:0.5rem; margin-bottom:0.5rem; box-shadow:0 1px 3px rgba(0,0,0,0.1);
       font-size:0.75rem;">
   <!-- LEFT COLUMN: Education -->
-  <div id="education" class="education-cards" style="flex:1 1 50%;">
+  <div id="education"  class="education-cards" style="flex:1 1 50%; flex-wrap: wrap;">
     <h2 >🎓 Education</h2>
     <!-- Card 1 -->
     <div style="
@@ -95,7 +86,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     </div>
   </div>
   <!-- RIGHT COLUMN: Honors (top) + Services (bottom) stacked -->
-  <div class="right-col" style="flex:1 1 50%; display:flex; flex-direction:column; gap:1rem;">
+  <div class="right-col" style="flex:1 1 50%; display:flex; flex-direction:column; gap:1rem; flex-wrap: wrap;">
     <!-- Honors/Awards -->
     <div>
       <h2>🏅 Honors & Awards </h2>
@@ -116,4 +107,40 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
       </div>
     </div>
   </div>
+</div>
+
+<div class="publication-container" style="flex: 0 0 450px; align-self: stretch; ;">
+  <ul id="publication-list" style="
+      max-height: auto; /* subtract header height */
+      overflow-y: auto;
+      list-style: none;
+      margin-top: 1rem;
+      padding: 0 1rem 1rem;
+      line-height: 1.6;
+      font-size: 0.85rem;
+    ">
+    <h2>Recent Publications</h2>
+    {% assign news_items = site.publications | sort: 'date' | reverse  %}
+    {% assign current_year = "" %}
+    {% assign this_year = 'now' | date: "%Y" %}
+    {% for item in news_items %}
+    {% assign year = item.date | date: "%Y" %}
+    {% assign stripped = item.title | markdownify | strip_newlines | replace: '<p>', '' | replace: '</p>', ''
+    %}
+    <li style="padding: 0.75rem 1rem; 
+          margin-bottom: 0.5rem; 
+          border: 1px solid #ddd; 
+          border-radius: 6px; 
+          background: #fff; 
+          color: #000;">
+      <div style="margin-bottom: 0.3rem; color: #000;">
+        {% if item.paperurl != "" %}
+        {{ stripped }} <a href="{{ item.paperurl }}" target="_blank" style="font-weight: 500">Paper</a>
+        {% else %}
+        {{ stripped }}
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
