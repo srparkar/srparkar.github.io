@@ -16,6 +16,9 @@ main:
   
   - title: "Projects"
     url: /projects/    
+  
+  # - title: "Codebase"
+  #   url: /repositories/
     
   - title: "Collaborators"
     url: /colabs/

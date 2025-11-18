@@ -120,7 +120,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
       font-size: 0.85rem;
     ">
     <h2>Recent Publications</h2>
-    {% assign news_items = site.publications | sort: 'date' | reverse  %}
+    {% assign news_items = site.publications | sort: 'date' | reverse | slice: 0,3 %}
     {% assign current_year = "" %}
     {% assign this_year = 'now' | date: "%Y" %}
     {% for item in news_items %}
