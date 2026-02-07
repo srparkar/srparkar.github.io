@@ -99,9 +99,10 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
     </div>
     <!-- Services -->
     <div>
-      <h2>📚 Services</h2>
+      <h2>📚 Academic Services</h2>
       <div>
         <ul style="font-weight:700; margin:0; padding-left:1.2rem; list-style-type:none;">
+          <li>Reviewer: UHM GSO Academic Enrichment Awards - Spring 2026</li>
           <li>1<sup>st</sup> iCNS/ECE Symposium on AI Research and Innovations (SIT)</li>
         </ul>
       </div>
