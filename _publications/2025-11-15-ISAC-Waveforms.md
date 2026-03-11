@@ -4,6 +4,6 @@ collection: publications
 category: conferences
 date: 2026-02-16
 venue: 'International Conference on Computing, Networking and Communications (ICNC 2026)'
-paperurl: ''
+paperurl: 'https://wings-uhm.github.io/Web/papers/2026_ICNC_Waveform.pdf'
 # citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
 ---

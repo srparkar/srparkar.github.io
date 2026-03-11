@@ -44,7 +44,8 @@ author_profile: false
           color: #000;">
       <div style="margin-bottom: 0.3rem; color: #000;">
         {% if item.paperurl != "" %}
-        {{ stripped }} <a href="{{ item.paperurl }}" target="_blank" style="font-weight: 500">Paper</a>
+        {{ stripped }} 
+        <a href="{{ item.paperurl }}" target="_blank" style="font-weight: 500"><br><i class="fa-solid fa-file-pdf"></i>Paper</a>
         {% else %}
         {{ stripped }}
         {% endif %}
