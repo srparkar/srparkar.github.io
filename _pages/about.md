@@ -136,7 +136,7 @@ I completed my graduate studies in <em style="color: #333333; font-weight: 475;"
           color: #000;">
       <div style="margin-bottom: 0.3rem; color: #000;">
         {% if item.paperurl != "" %}
-        {{ stripped }} <a href="{{ item.paperurl }}" target="_blank" style="font-weight: 500">Paper</a>
+        {{ stripped }} <a href="{{ item.paperurl }}" target="_blank" style="font-weight: 500"><i class="fa-solid fa-file-pdf"></i>Paper</a>
         {% else %}
         {{ stripped }}
         {% endif %}

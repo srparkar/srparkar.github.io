@@ -1,5 +1,5 @@
 ---
-title: "**Saurabh Parkar**, Xiaochan Xue, Shuang Li, Yao Zheng (2026). Adaptive Mode Selection in mmWave ISAC via Spectrally Disjoint Composite Waveforms TechRxiv. Submitted to **IEEE TCCN**. Under review."
+title: "**S. Parkar**, X. Xue, S. Li, Y. Zheng (2026). Adaptive Mode Selection in mmWave ISAC via Spectrally Disjoint Composite Waveforms TechRxiv. Submitted to **IEEE TCCN**. Under review."
 collection: publications
 category: manuscripts
 date: 2026-02-16
