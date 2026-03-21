@@ -50,6 +50,9 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
       {% endif %}
+      {% if author.ieee %}
+        <li><a href="https://ieeexplore.ieee.org/author/{{ author.ieee }}"><i class="ai ai-ieee ai-fw icon-pad-right"></i>IEEE</a></li>
+      {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
       {% endif %}
